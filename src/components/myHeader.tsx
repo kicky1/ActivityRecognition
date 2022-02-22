@@ -1,19 +1,19 @@
 import React from "react";
 
-interface TextProps {
+interface HeaderProps {
     text: string;
     color: string;
 }
 
-export default function Text({text, color}:TextProps){
+export default function myHeader({text, color}:HeaderProps){
     return (
-        <h1
+        <p
             style={{
                 color: color,
+                fontSize: '50px',
             }}
         >
-
             {text}
-        </h1>
+        </p>
         )
 }
